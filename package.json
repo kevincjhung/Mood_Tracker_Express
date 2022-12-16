@@ -8,7 +8,8 @@
   },
   "scripts": {
     "start": "node app.js",
-    "dev": "npx nodemon app.js"
+    "dev": "npx nodemon app.js",
+    "test": "jest"
   },
   "type": "module",
   "name": "mood-tracker-backend-kevincjhung",
@@ -26,6 +27,7 @@
   },
   "homepage": "https://github.com/sam-meech-ward-bcit/mood-tracker-backend-kevincjhung#readme",
   "devDependencies": {
+    "jest": "^29.3.1",
     "nodemon": "^2.0.20"
   },
   "keywords": []
