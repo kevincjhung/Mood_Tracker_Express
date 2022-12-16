@@ -1,5 +1,13 @@
 # Mood Tracker
 
+Assignment 1 of the class: Javascript Frameworks 
+
+A mood tracker application that allows users input a rating of their mood on a scale of 1-10, and a note about their current mood. 
+This will end up being a complete CRUD app so users can create, read, update, and delete their moods. 
+They will also be able to see a list of all of their moods and sort by date or rating.
+
+
+
 ## Progress
 ✅ done and tested
 
@@ -31,11 +39,3 @@
 ### Testing
     ❌ Write tests for your backend
     ❌ Write tests for your frontend
-
-
-## Overview
-A mood tracker application that allows users input a rating of their mood on a scale of 1-10, and a note about their current mood. 
-This will end up being a complete CRUD app so users can create, read, update, and delete their moods. 
-They will also be able to see a list of all of their moods and sort by date or rating.
-
-
