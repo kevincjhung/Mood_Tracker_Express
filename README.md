@@ -6,7 +6,8 @@ A mood tracker application that allows users input a rating of their mood on a s
 This will end up being a complete CRUD app so users can create, read, update, and delete their moods. 
 They will also be able to see a list of all of their moods and sort by date or rating.
 
-
+## Visit the app
+<a href="https://moodtrackerexpress-production.up.railway.app/"> CLICK HERE </a>
 
 ## Progress
 ✅ done and tested
