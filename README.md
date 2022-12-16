@@ -17,8 +17,8 @@ They will also be able to see a list of all of their moods and sort by date or r
     ✅ Mood component - a component that displays a single mood
     ✅ MoodForm component - a component that allows users to create a new mood or edit an existing mood
     ✅ App - main component
-    ✅ Order the list of moods by date (works, but cannot toggle between sorts)
-    ✅ Order the list of moods by rating (works, but cannot toggle between sorts)
+    ✅ Order the list of moods by date 
+    ✅ Order the list of moods by rating 
   
     
 ### Back end 
