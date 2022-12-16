@@ -9,6 +9,7 @@ app.use(express.json())
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
+const port = process.env.PORT || 8080;
 
 /** ROUTES */
 app.get("/", async (req, res) => {
@@ -96,6 +97,8 @@ app.use((err, req, res, next) => {
 
 
 
-app.listen(8080, () => {
-	console.log(`server is running on http://localhost:8080`);
+app.listen(port, () => {
+	console.log(`server is running on port ${port}
+	http://localhost:${port}
+	`);
 })
