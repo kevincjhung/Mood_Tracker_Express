@@ -19,8 +19,8 @@ app.get("/", async (req, res) => {
 // call this route to seed the database
 app.put("/api/seed", (req, res) => {
 	try {
-		seedDatabase()
-		res.send('database seeded')
+		// seedDatabase()
+		// res.send('database seeded')
 	} catch (err) { 
 		console.error(err)
 	}
@@ -31,7 +31,6 @@ app.put("/api/seed", (req, res) => {
 app.get("/api/moods", async (req, res) => {
 	try {
 		const moods = await getMoods();
-
 		if (moods.length == 0 && Array.isArray(moods)) {
 			res.status(404).send({ error: "there are no moods to get" })
 			return;
@@ -52,7 +51,6 @@ app.post("/api/moods", async (req, res) => {
 		const { notes, rating } = req.body; 
 		await insertMood(notes, rating);
 		res.status(200).send({success: true, message: "mood created successfully" });
-
 	} catch(error) {
 		console.error(error);
 		res.status(500).send({ error: `cannot post new mood` });
@@ -80,7 +78,6 @@ app.delete("/api/moods/:id", async (req, res) => {
 	try {
 		await deleteMood(req.params.id);
 		res.status(200).send({success: true});
-
 	} catch (error) {
 		console.error(error);
 		res.status(500).send({ error: 'cannot delete the mood' });
