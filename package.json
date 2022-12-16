@@ -12,7 +12,7 @@
   },
   "type": "module",
   "name": "mood-tracker-backend-kevincjhung",
-  "description": "<h2>Mood Tracker</h2> This assignment is due Sep 29th at 11:59pm, but I suggest you try to get it done by Sep 22nd at 11:59pm. I will be giving you access to assignment 2 on Sep 23rd, so it would be nice for you to not have to worry about two assignments at the same time.",
+  "description": "A mood tracker application using express, react, react-proxy and mysql.",
   "version": "1.0.0",
   "main": "server.js",
   "repository": {
