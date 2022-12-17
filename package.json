@@ -4,14 +4,14 @@
     "dotenv": "^16.0.2",
     "express": "^5.0.0-beta.1",
     "mysql": "^2.18.1",
-    "mysql2": "^2.3.3"
+    "mysql2": "^2.3.3",
+    "supertest": "^6.3.3"
   },
   "scripts": {
     "start": "node app.js",
     "dev": "npx nodemon app.js",
     "test": "jest"
   },
-  "type": "module",
   "name": "mood-tracker-backend-kevincjhung",
   "description": "A mood tracker application using express, react, react-proxy and mysql.",
   "version": "1.0.0",
@@ -30,5 +30,6 @@
     "jest": "^29.3.1",
     "nodemon": "^2.0.20"
   },
+  "type": "module",
   "keywords": []
 }
