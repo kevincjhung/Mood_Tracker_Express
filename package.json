@@ -10,7 +10,7 @@
   "scripts": {
     "start": "node app.js",
     "dev": "npx nodemon app.js",
-    "test": "jest"
+    "test":"NODE_OPTIONS=--experimental-vm-modules npx jest"
   },
   "name": "mood-tracker-backend-kevincjhung",
   "description": "A mood tracker application using express, react, react-proxy and mysql.",
