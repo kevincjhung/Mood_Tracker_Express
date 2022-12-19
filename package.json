@@ -8,8 +8,8 @@
     "supertest": "^6.3.3"
   },
   "scripts": {
-    "start": "node app.js",
-    "dev": "npx nodemon app.js",
+    "start": "node server.js",
+    "dev": "npx nodemon server.js",
     "test":"NODE_OPTIONS=--experimental-vm-modules npx jest"
   },
   "name": "mood-tracker-backend-kevincjhung",
@@ -31,5 +31,8 @@
     "nodemon": "^2.0.20"
   },
   "type": "module",
+  "jest": {
+    "transform": {}
+  },
   "keywords": []
 }

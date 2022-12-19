@@ -2,14 +2,13 @@ import express from 'express'
 import bodyParser from 'body-parser'
 import { deleteMood, getMoods, updateMood, seedDatabase, insertMood } from './database.js'
 
-const app = express();
+let app = express();
 
 app.use(express.static('dist')) // a request that comes in to /
 app.use(express.json())
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-const port = process.env.PORT || 8080;
 
 /** ROUTES */
 app.get("/", async (req, res) => {
@@ -36,7 +35,7 @@ app.get("/api/moods", async (req, res) => {
 			return;
 		}
 
-		res.send(moods);
+		res.status(201).send(moods);
 	} catch (error) {
 		console.error(error);
 		res.status(500).send({ error: `cannot get all moods` });
@@ -94,6 +93,5 @@ app.use((err, req, res, next) => {
 
 
 
-app.listen(port, () => {
-	console.log(`server is running: http://localhost:${port}`);
-})
+
+export default app
